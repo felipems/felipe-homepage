@@ -1,0 +1,98 @@
+<% active = "Academics" %>
+	<%= render :partial =>"navbar", :locals => {:active => "Academics"} %>
+
+  <div class="row-fluid">
+  <%= render :partial =>"sidebar" %>
+    <div class="span9">
+ 		<div class = "content-block ">
+ 			<h1 class="center_content_title">Academics</h1>
+ 			<p class="lead">
+I am currently a senior at Stanford University, majoring in Computer Science and minoring in Iberian and Latin American Literature.  Here is more information about the some courses I have taken and what I have learned from them.
+
+		<h3 class="center_content_title"> Computer Science </h3>
+			<div class="row">
+				
+				<div class= "span1"> </div>
+		  		<div class="span6">
+		  			<h4>CS 221, Artificial Intelligence: Principles and Techniques</h4> 
+		  			This class covered a broad understanding of AI, topics included search, constraint satisfaction, knowledge representation, probabilistic models, Bayesian networks, machine learning, neural networks, vision, robotics, and natural language processing. Checkout our final project and the paper for which my partner and I received extra credit. We built and compared two ways to recommend songs to users. The paper is here. Contact me if you want the code!
+				</div>
+		  		<div class="span3"><%= image_tag("ai_image.png", :class => "img-circle img_academic")  %></div>
+			</div>
+			
+			<div class="row">
+				
+				<div class= "span1"> </div>
+		  		<div class="span6">
+		  			<h4>CS 140, Operating Systems </h4>
+		  			This class introduced me to the basic facilities provided in modern operating systems. The course was divided into three major sections. The first part of the course discusses concurrency. I learned about processes and threads, context switching, synchronization, scheduling, and deadlock scenarios. The second part of the course addresses the problem of memory management; we covered linking, dynamic memory allocation, dynamic address translation, virtual memory, and demand paging. Thirdly, I learned about the fundamentals of file systems, including topics such as storage devices, disk management and scheduling, directories, protection, and crash recovery.
+			<br>
+
+			This was a hard course, perhaps one of the toughest in the CS major at Stanford. I had a blast.
+				</div>
+		  		<div class="span3">
+		  			<br><%= image_tag("va_image.gif", :class => "img-polaroid img_academic")  %></div>
+			</div>
+			
+
+		<div class="row">
+			<div class= "span1"> </div>
+		  	<div class="span6">
+		  	<h4>CS 142, Web Applications </h4> 
+		  			This class introduced me to the different Web technologies and gave me experience creating Web applications. I learned about markup languages, scripting languages, network protocols, interactive graphics, event-driven programming, and databases, and understood the interplay of these technologies to create modern web applications. This webpage is built using the principles taught in this class! Ruby on Rails, JS, HTML/CSS, and the works... 
+			</div>
+		  		<div class="span4"><%= image_tag("rails1.png", :class => " img_academic")  %></div>
+		</div>	
+
+		<div class="row">
+			<div class= "span1"> </div>
+		  		<div class="span6">
+		  				<h4>CS 155, Computer and Network Security </h4> 
+		  			I was taught about the principles of computer systems security, attack techniques and how to defend against them. Topics included: network attacks and defenses, operating system security, application security (web, apps, databases), malware, privacy, and security for mobile devices. The course projects focused on hacking into faulty code (OS, web, android) and then building secure alternatives.  
+				</div>
+		  		<div class="span4"><%= image_tag("comp_security.jpg", :class => " img_academic")  %></div>
+		</div>
+
+		<div class="row">
+			<div class= "span1"> </div>
+		  		<div class="span6">
+		  				<h4>CS 103, Mathematical Foundations of Computing  </h4> 
+		  			I was shown the mathematical foundations required for computer science, including propositional predicate logic, induction, sets, functions, and relations. I learned about formal language theory, including regular expressions, grammars, finite automata, Turing machines, and NP-completeness. Overall it was a course on mathematical rigor, proof techniques, and application.
+				</div>
+		  		<div class="span4"><%= image_tag("pvsnp.jpeg", :class => " img-polaroid img_academic")  %></div>
+		</div>
+<h3 class="center_content_title"> Miscellaneous </h3>
+			<div class="row">
+				
+				<div class= "span1"> </div>
+		  		<div class="span6">
+		  			<h4>CEE 151, Negotiation</h4> 
+		  			I learned about preparing and conducting negotiations in a variety of arenas including getting a job, managing workplace conflict, negotiating transactions, and managing personal relationships. This was a highly interactive class taught by Stan Christensen, a travelled instructor who has mediated cases in over 75 countries!  He required us to negotiate real life case studies and discuss their results in class, including cross-negotiations with the Stanford Law School. One of the most useful classes I have ever taken. 
+
+		  			<br>
+		  			Fun Fact: I was the only freshman who was accepted into the class at the time. I negotiated myself into a negotiations class, how fitting!
+				</div>
+		  		<div class="span4"><%= image_tag("negotiation.jpg", :class => " img_academic")  %></div>
+			</div>
+
+			<div class="row">
+				
+				<div class= "span1"> </div>
+		  		<div class="span6">
+		  			<h4>AA 241X: Design, Construction, and Testing of Autonomous Aircraft</h4> 
+		  			We were grouped  according to our expertise to carry out the multidisciplinary design of a solar-powered autonomous aircraft that had to meet a clearly stated set of design requirements. We did everything: design and construction of the airframe, integration with existing guidance, navigation, and control systems, and development and operation of the resulting design. We finally wrote a 50 page paper on the design review and on the final flight report. 
+
+		  			<br>
+		  			Fun Fact: I was the only UNDERGRADUATE student who took this class, everyone else was either a PHD or masters in areo and astro engineering. My extensive experience bulding radio controlled airplanes and helicopters proved invaluable in the rapid prototyping and engineering challenges we faced. I was also the pilot of the autonomous aircrafts while we programmed the autopilot. An amazing team-building experience. 
+				</div>
+				<br>
+		  		<div class="span4"><%= image_tag("team_pangaea.jpg", :class => " img_academic")  %></div>
+			</div>
+
+
+	</div>
+	
+
+		<div class="span1">
+		</div>
+

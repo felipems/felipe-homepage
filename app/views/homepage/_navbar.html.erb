@@ -1,0 +1,16 @@
+<% active = "About Me" if active.nil? %>
+<div class="navbar">
+  <div class="navbar-inner">
+    <a class="brand" href="#">Felipe Munera Savino</a>
+    <ul class="nav">
+      <li class="<%= active.eql?('About Me') ? 'active' : '' %>"><%= link_to "About Me", "/homepage/aboutme" %></li>
+      <li class="<%= active.eql?('Academics') ? 'active' : '' %>"><%= link_to "Academics", "/homepage/academics" %></li>
+
+      <li><a href="/homepage/academics">Research</a></li>
+      <li><a href="#">Entrepreneurship</a></li>
+      <li><a href="#">Hobbies</a></li>
+      <li><a href="#">Extras</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</div>

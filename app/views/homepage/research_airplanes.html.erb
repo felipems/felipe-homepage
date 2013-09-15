@@ -1,0 +1,107 @@
+
+	<%= render :partial =>"navbar", :locals => {:active => "Research"} %>
+
+  <div class="row-fluid">
+  <%= render :partial =>"sidebar" %>
+    <div class="span9">
+		<div class = "content-block ">
+			<h2 class="center_content_title">Research </h2>
+			<p class="lead">
+			Pushing the boundaries of human knowledge is an attitude so core to the human element that we must do it so frequently and so agressively that we can only go to sleep at night knowing there wasn't anything else we could've known that day, for the essence of fresh knowledge is one of life's greatest gifts.
+			</p>
+
+			
+			<div class= "research_div">
+				<ul class="nav nav-tabs">
+			  <li >
+			    <a href="#">ARM64 servers</a>
+			  </li>
+			  <li class="active">
+			  	<a href="#">Automatic Stall/Spin Recovery</a>
+			  </li>
+			</ul>
+				<h3 class="center_content_title"> ARM64 servers </h3>
+				<h5 class="center_content_title" id="long_title"> Benchmarking and Optimizing datacenter workloads</h5>
+				<br>
+				<div class="row">
+								
+					<div class= "span1"> </div>
+					<div class="span5">
+						<h4 "center_content_title">  Overview</h4>
+							  			
+						A number of companies are introducing new server chips based on the ARM64 architecture. These chips bring a number of innovative features such as integrated network adapters, accelerators, additional small cores for protocol processing. 
+
+						The goal of this project is to use a prototype server with an ARM64 chip and optimize datacenter workloads to use these novel features. The goal is to show significant latency, throughput or power efficiency improvements. As part of the project, we  also benchmark a lot of existing apps on these new chips. 
+
+						<h4 "center_content_title">  Motivation</h4>
+
+						The large-scale data centers used by companies like Facebook and Google are power limited. Hence, there is a lot of interest to use power efficient technologies for processors, memories, networks, and storage. The ARM architecture has traditionally been behind energy efficient chips for mobile systems. Now there is an effort to build ARM-based systems for servers and data centers. The focus of this work is to evaluate and optimize one of the first such systems. 
+
+							h4 "center_content_title">  Background</h4>
+
+						<h5>ARMv8</h5>
+							The new ARMv8 is ARM’s 64bit core that aims to be optimized for the server space, including new optimizations such as:
+
+						<ul>
+							<li>64b (General) and 128b (FP,SIMD) registers</li>
+							<li>SP, PC no longer general purpose  registers</li>
+							<li>Uniform load/store addressing  modes </li>
+							<li>Larger data and instr. offset ranges </li>
+							<li>Simplified load/store multiple instructions</li>
+							<li>Reduced conditional instructions </li>
+						</ul>
+
+						<h5>XGENE</h5>
+							X-GENE is the first available implementation of the ARMv8 ISA. It is a 8 core chip with a design point that targets balance between performance, power, and size. Many of the new interesting features include:
+						<ul>
+
+							<li>Sophisticated branch prediction, caches, unified register renaming </li>
+							<li>Minimal instruction replay cases </li>
+							<li>Separate smaller schedulers per pipe </li>
+							<li>Full set of power management features </li>
+							<li>Scalable CPU and interconnect architecture 2-128 cores </li>
+							<li>High bandwidth, low latency switch fabric > 1Tbps</li>
+							<li>High performance distributed hardware</li>
+							<li> cache coherency  </li>
+					
+							Processor Module:
+							<li>8 cores + shared L2 cache</li>
+							<li>Integer, scalar, HP/SP/DP FPU and 128b SIMD engine</li>
+							<li>Hardware virtualization support</li>
+							<li>Hardware table-walk and nested page tables </li>
+							<li>Full set of static and dynamic power management features</li>
+							<li>Fine grain/macro clock gating, DVFS</li>
+							<li>C0, C1, C3, C4, C6 states</li>
+								
+						</ul>
+								
+					<h4>Benchmarking Methodology</h4>
+					We want to test the performance of the Mustang board to determine its relative performance to other servers in the industry. Performance is measured in three basic pillars, CPU, memory, and network, and the analysis is scaled to the power consumption of the server.
+
+					From here on everything else is under a non disclosure agreement, as soon as I get permission, I will post the results here!
+			
+					</div>
+					<div class="span4">
+						<%= image_tag("felipe_research.png", :class => "img-polaroid img_academic")  %>
+
+						<%= image_tag("a7_64bit.jpg" , :class => "img-polaroid img_academic")  %>
+
+						<%= image_tag("arm_logo.jpg", :class => "img-polaroid img_academic")  %>
+
+						<%= image_tag("apm_xgene.jpg", :class => "img-polaroid img_academic")  %>
+
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+	<div class="span1">
+	    
+	</div>
+
+
+
+
+
+

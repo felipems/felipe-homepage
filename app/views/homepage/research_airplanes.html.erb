@@ -14,81 +14,62 @@
 			<div class= "research_div">
 				<ul class="nav nav-tabs">
 			  <li >
-			    <a href="#">ARM64 servers</a>
+			    <a href="/homepage/research">ARM64 servers</a>
 			  </li>
 			  <li class="active">
 			  	<a href="#">Automatic Stall/Spin Recovery</a>
 			  </li>
 			</ul>
-				<h3 class="center_content_title"> ARM64 servers </h3>
-				<h5 class="center_content_title" id="long_title"> Benchmarking and Optimizing datacenter workloads</h5>
+				<h3 class="center_content_title"> Auto Stall/Spin Recovery </h3>
+				<h5 class="center_content_title" > Making flying safer</h5>
 				<br>
 				<div class="row">
 								
 					<div class= "span1"> </div>
 					<div class="span5">
-						<h4 "center_content_title">  Overview</h4>
+
+					<h4 "center_content_title">  Motivation</h4>
+					25% of the deaths in small aircraft are because the airplane enters a stall/spin. This situation is usually close to the ground and the aerodynamics at play are so complex even expert pilots sometimes fail at recovering the airplane. Robbie's mission, is to build a system that can be attached to these airplanes that automatically activates when the airplane reaches a critical state and recovers it, saving the lives of those on board. 
+							
+					<h4 "center_content_title">  My Role</h4>
+					I work with Robbie on the implementation side of the research topic. Developing this system requires doing extensive flight testing on airplanes ranging from 3-12 foot wingspan.  Mainly, I operate all the radio controlled aircraft needed to carry out the research, including putting and recovering them from different stall/spins and other maneouvers. Protecting thousands of dollars in research with my piloting abilities. Furthermore,  I also provide building and setup support when assembling these complex systems. 
+
+
+						<h4 "center_content_title">  Goals of flight testing</h4>
 							  			
-						A number of companies are introducing new server chips based on the ARM64 architecture. These chips bring a number of innovative features such as integrated network adapters, accelerators, additional small cores for protocol processing. 
-
-						The goal of this project is to use a prototype server with an ARM64 chip and optimize datacenter workloads to use these novel features. The goal is to show significant latency, throughput or power efficiency improvements. As part of the project, we  also benchmark a lot of existing apps on these new chips. 
-
-						<h4 "center_content_title">  Motivation</h4>
-
-						The large-scale data centers used by companies like Facebook and Google are power limited. Hence, there is a lot of interest to use power efficient technologies for processors, memories, networks, and storage. The ARM architecture has traditionally been behind energy efficient chips for mobile systems. Now there is an effort to build ARM-based systems for servers and data centers. The focus of this work is to evaluate and optimize one of the first such systems. 
-
-							h4 "center_content_title">  Background</h4>
-
-						<h5>ARMv8</h5>
-							The new ARMv8 is ARM’s 64bit core that aims to be optimized for the server space, including new optimizations such as:
-
+					The overall goals of the flight testing campaign are:
+					<ol>
+						<li>Demonstrate stall/spins on small scaled aircraft</li>
+						<li>Gain experience in the logistics and overall operations of a stall/spin campaign</li>
+						<li>Study qualitatively the stall/spin characteristics, this includes:</li>
 						<ul>
-							<li>64b (General) and 128b (FP,SIMD) registers</li>
-							<li>SP, PC no longer general purpose  registers</li>
-							<li>Uniform load/store addressing  modes </li>
-							<li>Larger data and instr. offset ranges </li>
-							<li>Simplified load/store multiple instructions</li>
-							<li>Reduced conditional instructions </li>
+							<li>Flight condition and control actions for spin entry, and its repeatability</li>
+							<li>Control sequence and trajectory for early arrest and recovery, and its repeatability</li>
+							<li>Control sequence for recovery from developed spin</li>
+							<li>Effects of moving CG aft on all of the above
+</li>
+							<li>Effect of adding more weight and roll, pitch and yaw inertias Aileron roll control effectiveness at different stages of the spin </li>
+							<li>Altitude loss at different stages of the spin</li>
+
+
 						</ul>
 
-						<h5>XGENE</h5>
-							X-GENE is the first available implementation of the ARMv8 ISA. It is a 8 core chip with a design point that targets balance between performance, power, and size. Many of the new interesting features include:
-						<ul>
+						<li>Study quantitatively, by analyzing flight data, the above mentioned stall/ spin characteristics.</li>
+						<li>Study qualitatively and quantitatively the stall/spin characteristics from a steady turn</li>
+						<li>Study the effect of lowering both ailerons, to emulate a positive twist to the wing, on the stall/spin characteristics</li>
+						<li>Develop a control system that can enter a stall/spin automatically, both from straight and level flight and a steady turn</li>
+						<li>Hard code a recovery control sequence for early arrest of spin entry, and demonstrate its effectiveness in flight.</li>
+					</ol>
 
-							<li>Sophisticated branch prediction, caches, unified register renaming </li>
-							<li>Minimal instruction replay cases </li>
-							<li>Separate smaller schedulers per pipe </li>
-							<li>Full set of power management features </li>
-							<li>Scalable CPU and interconnect architecture 2-128 cores </li>
-							<li>High bandwidth, low latency switch fabric > 1Tbps</li>
-							<li>High performance distributed hardware</li>
-							<li> cache coherency  </li>
-					
-							Processor Module:
-							<li>8 cores + shared L2 cache</li>
-							<li>Integer, scalar, HP/SP/DP FPU and 128b SIMD engine</li>
-							<li>Hardware virtualization support</li>
-							<li>Hardware table-walk and nested page tables </li>
-							<li>Full set of static and dynamic power management features</li>
-							<li>Fine grain/macro clock gating, DVFS</li>
-							<li>C0, C1, C3, C4, C6 states</li>
-								
-						</ul>
-								
-					<h4>Benchmarking Methodology</h4>
-					We want to test the performance of the Mustang board to determine its relative performance to other servers in the industry. Performance is measured in three basic pillars, CPU, memory, and network, and the analysis is scaled to the power consumption of the server.
-
-					From here on everything else is under a non disclosure agreement, as soon as I get permission, I will post the results here!
 			
 					</div>
 					<div class="span4">
-						<%= image_tag("felipe_research.png", :class => "img-polaroid img_academic")  %>
+						<%= image_tag("robbie.jpg", :class => "img-polaroid img_academic")  %>
 
-						<%= image_tag("a7_64bit.jpg" , :class => "img-polaroid img_academic")  %>
+						<%= image_tag("felipe_violeta.png" , :class => "img-polaroid img_academic")  %>
 
-						<%= image_tag("arm_logo.jpg", :class => "img-polaroid img_academic")  %>
+						<%= image_tag("violeta.png" , :class => "img-polaroid img_academic")  %>
 
-						<%= image_tag("apm_xgene.jpg", :class => "img-polaroid img_academic")  %>
 
 					</div>
 				</div>

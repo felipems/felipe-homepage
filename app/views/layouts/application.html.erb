@@ -22,6 +22,6 @@
 <%= yield %>
 </div>
 
-
+<%= render :partial => ‘layouts/ganalytics’ if RAILS_ENV == ‘production’ %>
 </body>
 </html>
